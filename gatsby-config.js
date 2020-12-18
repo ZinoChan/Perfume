@@ -1,8 +1,4 @@
 module.exports = {
-  pathPrefix: "/my_project",
-}
-
-module.exports = {
   siteMetadata: {
     title: `Perfume`,
     description: `Landing page project made with gatsbyjs`,
@@ -20,13 +16,7 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/assets/images`,
-      },
-    },
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
@@ -67,4 +57,4 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
   ],
-}
+};
